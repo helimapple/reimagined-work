@@ -25,6 +25,6 @@ public:
                 }
                 if (j < matrix[i].size() - 1 && matrix[i][j + 1] != numeric_limits<int>::max()) {
                     matrix[i][j] = min(matrix[i][j], matrix[i][j + 1] + 1);
-                }
+                }//good
             }
         }
