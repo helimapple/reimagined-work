@@ -9,7 +9,7 @@ public:
                 if (i > 0 && matrix[i - 1][j] != numeric_limits<int>::max()) {
                     matrix[i][j] = min(matrix[i][j], matrix[i - 1][j] + 1);
                 }
-                if (j > 0 && matrix[i][j - 1] != numeric_limits<int>::max()) {
+                if (j > 0 && matrix[i][j - 1] != numeric_limits<int>::max()) {//yes
                     matrix[i][j] = min(matrix[i][j], matrix[i][j - 1] + 1);
                 }
             }
